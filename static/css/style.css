@@ -1,0 +1,166 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body{
+    
+    margin: auto;
+}
+#cardapio {
+  list-style: none;
+  display: grid;
+  
+  justify-content: left;
+  align-items: left;
+  margin: auto;
+  color: rgb(228, 228, 77);
+  width: 90%;
+  
+
+}
+
+.bttn{
+  width: 400px;
+}
+
+ul{
+    margin: auto;
+    padding: 0;
+}
+#cardapio > li {
+  width: 140%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  padding: 5px;
+  font-weight: bolder;
+  
+}
+#cardapio > li >h2, h3 {
+  display: none;
+}
+h1{
+    font-size: 150%;
+    font-style: italic;
+    text-align: left;
+    text-shadow: black 5px 5px 10px;
+}
+
+h2{
+  align-items: right;
+}
+
+#cardapio > li:hover {
+  transition: 2.0s;
+  color: rgb(255, 255, 19);;
+}
+
+
+
+#cardapio > li{
+  margin-top: 10%;
+}
+
+li{
+  width: 100%;
+}
+
+.insertbar{
+  position:fixed;
+  bottom:0px;
+  width: 100%;
+  
+}
+
+.bardesign{
+    width: 80%;
+    height: 2px;
+    background-color: white;
+    border-radius: 40%;
+    margin-bottom: 1%;
+    z-index: 3;
+}
+
+
+
+form {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 70%;
+  background-color: rgb(61, 61, 61);;
+  padding: 10px;
+  margin-top: 50px;
+  border-radius: 40px 40px 0px 0px;
+}
+form input{
+  width: 250px;
+  height: 40px;
+  margin: 5px;
+  font-size: 80%;
+  border-radius: 40px;
+  outline: 0;
+  border-style: none;
+  font-style: italic;
+}
+button {
+  height: 10%;
+  width: 15%;
+  background-color: rgb(61, 61, 61);;
+  color: white;
+  border: 1px solid rgb(228, 228, 77);
+  border-radius: 0px 2px 0px 0px;
+  padding: 5px;
+  border-radius: 10px;
+  font-weight: bolder;
+  margin: 0
+}
+button:hover{
+    transition: 0.3s;
+    background-color: rgb(228, 228, 77);
+    color: black;
+    cursor: pointer;
+}
+#background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-color: dimgray;
+  
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 0.9;
+  border: 1px transparent;
+}
+#div-busca{
+    height: 100px;
+    background-color: rgb(61, 61, 61);
+    margin-bottom: 50px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 90%;
+    font-weight: bolder;
+}
+#div-busca > input{
+    margin-left: 60%;
+    font-size: 90%;
+    border-radius: 40px;
+    outline: 0;
+    border-style: none;
+    width: 30%;
+    height: 30%;
+    font-style:italic;
+}
